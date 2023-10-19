@@ -1,0 +1,12 @@
+namespace: dev
+
+replicaCount: 3
+appName: product
+containerName: product
+
+serviceName: product-service
+serviceType: ClusterIP
+
+image:
+  name: azuresolutionregistry.azurecr.io/productmicroservice
+  tag: {{tag}}
